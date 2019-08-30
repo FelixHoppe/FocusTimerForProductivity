@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rlbig"
+    android:background="#fff"
+    tools:context="de.felix_h.focustimerforproductivity.MainActivity">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rl"
+    android:layout_marginTop="30dp"
+    android:layout_marginBottom="30dp"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/text_view_countdown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="00:00"
+        android:textColor="#000"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/reset"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:text="RESET"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/settings"
+        android:layout_width="154dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:padding="10dp"
+        android:text="SETTINGS"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <NumberPicker
+        android:id="@+id/np"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_view_countdown"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/volume"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/reset"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:background="@drawable/baseline_volume_up_black_48"
+        android:visibility="invisible"
+        android:layout_marginLeft="41dp"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:id="@+id/volume_off"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignBottom="@+id/reset"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="41dp"
+        android:background="@drawable/baseline_volume_off_black_48"
+        android:visibility="invisible"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="41dp" />
+
+    <TextView
+        android:id="@+id/hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="176dp"
+        android:gravity="center"
+        android:text="Click somewhere to start the timer \n\n\n For best results turn your Internet connection off"
+        android:visibility="invisible" />
+    </RelativeLayout>
+</RelativeLayout>
